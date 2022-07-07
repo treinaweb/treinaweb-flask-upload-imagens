@@ -31,3 +31,7 @@ def upload_image():
     file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
     flash('Imagem enviada com sucesso')
     return render_template('index.html', filename=filename)
+
+@app.route("/display/<filename>")
+def display_image(filename):
+    return redirect(url_for('static', filename='uploads/' + filename), code=301)
