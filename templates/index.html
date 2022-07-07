@@ -9,5 +9,15 @@
 <body>
   <h2 align="center">Upload de Imagens com Flask</h2>
   <hr>
+  <form method="post" enctype="multipart/form-data" action="/" >
+    <dl>
+      <p>
+          <input type="file" name="file">
+      </p>
+    </dl>
+    <p>
+      <input type="submit" value="Submit">
+    </p>
+  </form>
 </body>
 </html>
