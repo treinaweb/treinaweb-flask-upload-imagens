@@ -9,7 +9,7 @@
 <body>
   <h2 align="center">Upload de Imagens com Flask</h2>
   <hr>
-  <form method="post" enctype="multipart/form-data" action="/" >
+  <form method="post" enctype="multipart/form-data" action="{{ url_for('upload_image') }}" >
     <dl>
       <p>
           <input type="file" name="file">
